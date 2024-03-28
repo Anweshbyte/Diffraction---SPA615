@@ -18,7 +18,6 @@ plt.grid(True)
 folder_path = "int_arr"
 if not os.path.exists(folder_path):
     os.makedirs(folder_path)
-
 file_path = os.path.join(folder_path, f"mono-{(lmda)*1e9:.0f}-nm")
 np.save(file_path, intensity)
 plt.show()

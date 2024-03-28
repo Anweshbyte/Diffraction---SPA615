@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+from params import *
 
 folder_path = 'int_arr'
 
@@ -14,10 +15,11 @@ for file_name in file_list:
     data_list.append(data)
     labels.append(label)
 
+u_values = np.sqrt(2 / (lmda * dist)) * np.linspace(-50, 10, 1000)
 for data, label in zip(data_list, labels):
-    plt.plot(data, label=label)
+    plt.plot(u_values, data, label=label)
 
-plt.xlabel('X (m)')
+plt.xlabel('u (Fresnel Number)')
 plt.ylabel('Intensity of light')
 plt.title('Effect of finite passband')
 plt.legend()
