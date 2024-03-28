@@ -13,7 +13,7 @@ def sin_integrand(t):
 
 def integral_function(integrand_func, x):
     integral, _ = quad(integrand_func, 0, x)
-    return np.abs(integral) ** 2
+    return (np.abs(integral)) ** 2
 
 x_values = np.arange(-10, 50, 0.2)
 polychromatic_intensity = np.zeros_like(x_values)
