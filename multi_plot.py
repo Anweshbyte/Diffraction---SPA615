@@ -2,7 +2,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-folder_path = 'int_values'
+folder_path = 'int_arr'
 
 file_list = [f for f in os.listdir(folder_path) if f.endswith('.npy')]
 data_list = []
@@ -10,7 +10,7 @@ labels = []
 
 for file_name in file_list:
     data = np.load(os.path.join(folder_path, file_name))
-    label = file_name[14:-4]  
+    label = file_name[5:-4]  
     data_list.append(data)
     labels.append(label)
 

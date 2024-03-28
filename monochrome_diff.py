@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 from params import *
 
-u_values = np.linspace(-5, 5, 1000)
+u_values = np.sqrt(2 / (lmda * dist)) * np.linspace(-50, 10, 1000)
 S, C = fresnel(u_values)
 
 intensity = 0.5 * ((0.5 - C)**2 + (0.5 - S)**2)
