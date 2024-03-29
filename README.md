@@ -35,7 +35,7 @@ Below is an example plot run for monochromatic and polychromatic (narrow, interm
 *Caption: Combined Fresnel Diffraction plots*
 
 ### Reference
-[Website Name](http://spiff.rit.edu/richmond/occult/bessel/bessel.html#:~:text=The%20term%20%22Fresnel%20diffraction%22%20is,and%20onto%20a%20distant%20screen.))
+[Diffraction effects during a lunar occultation - Michael Richmond](http://spiff.rit.edu/richmond/occult/bessel/bessel.html#:~:text=The%20term%20%22Fresnel%20diffraction%22%20is,and%20onto%20a%20distant%20screen.)
 
 ## License
 
