@@ -32,7 +32,7 @@
 Below is an example plot run for monochromatic and polychromatic (narrow, intermediate and wide bandwidths):
 
 ![Example Plot](plots/Combined_plots.png)
-*Caption: Combined Fresnel Diffraction plots*
+Combined Fresnel Diffraction plots*
 
 ### Reference
 [Diffraction effects during a lunar occultation - Michael Richmond](http://spiff.rit.edu/richmond/occult/bessel/bessel.html#:~:text=The%20term%20%22Fresnel%20diffraction%22%20is,and%20onto%20a%20distant%20screen.)
