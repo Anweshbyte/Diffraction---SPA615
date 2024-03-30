@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from params import *
 
 folder_path = 'int_arr'
-
 file_list = [f for f in os.listdir(folder_path) if f.endswith('.npy')]
 data_list = []
 labels = []
@@ -31,7 +30,6 @@ if not os.path.exists(folder_path):
 file_name = f"Combined plots.png"
 file_path = os.path.join(folder_path, file_name)
 plt.savefig(file_path)
-
 plt.show()
 
 
