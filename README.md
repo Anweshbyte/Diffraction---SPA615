@@ -15,17 +15,16 @@
 4. Setup Python Virtual Environment : <code> virtualenv venv </code>
 5. Activate the virtual environment. On Windows , <code>venv\Scripts\activate.bat</code>. On Linux/macOS, <code>source venv/bin/activate</code>.
 5. Install the required modules : <code> pip install -r requirements.txt</code>
-6. Run the **diff_mono** or **diff_poly** file based on your needs.
-7. You can change the parameters from the **params.py** file.
-8. Plot the obtained simulations by running **plotter.py**.
+6. Adjust the parameters in **params.py**.
+6. Run the **diffraction.py**.
+7. Plot the obtained simulations by running **plotter.py**.
 
 ### Project Structure
-1. **diff_mono**: Runs intensity simulations for a monochromatic light source.
-2. **diff_poly**: Runs intensity simulations for a polychromatic light source.
-3. **params.py**: Stores the wavelength (for monochromatic) and bandwidth (for polychromatic), and step size to consider the contribution from various frequencies in the bandwidth.
-4. **plotter.py:** Generates the combined plots for all the run simulations.
-5. **int_arr** directory stores the **Numpy** arrays of the calculated valued of the intensities.
-6. **plots** contain the combined plots.
+1. **diffraction**: Runs intensity simulations for a mono/poly-chromatic light source.
+2. **params.py**: Stores the wavelength (for monochromatic) and bandwidth (for polychromatic), and step size to consider the contribution from various frequencies in the bandwidth.
+3. **plotter.py:** Generates the combined plots for all the run simulations.
+4. **int_arr** directory stores the **Numpy** arrays of the calculated valued of the intensities.
+5. **plots** contain the combined plots.
 
 ### Example Plot
 
