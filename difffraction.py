@@ -5,7 +5,7 @@ from scipy.integrate import quad
 import os
 from params import *
 
-u_values = np.sqrt(2 / (lmda_min * dist)) * np.linspace(-50, 10, 1000)
+u_values = np.sqrt(2 / (lmda_min * dist)) * np.linspace(-50, 10, 10000)
 intensity = np.zeros_like(u_values)
 poly_intensity = np.zeros_like(u_values)
 
@@ -25,7 +25,7 @@ if BW != 0:
 
 
 else: 
-    u_values = np.sqrt(2 / (lmda * dist)) * np.linspace(-50, 10, 1000)
+    u_values = np.sqrt(2 / (lmda * dist)) * np.linspace(-50, 10, 100000)
     S, C = fresnel(u_values)
     intensity = 0.5 * ((0.5 - C)**2 + (0.5 - S)**2)
     folder_path = "int_arr"
@@ -41,5 +41,6 @@ plt.plot(u_values, intensity )
 plt.title('Combined Intensity')
 plt.xlabel('x (m)')
 plt.ylabel('Intensity')
+plt.xlim(-5,2)
 plt.grid(True)
 plt.show()
