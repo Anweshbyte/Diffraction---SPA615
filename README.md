@@ -30,7 +30,7 @@
 
 Below is an example plot run for monochromatic and polychromatic (narrow, intermediate and wide bandwidths):
 
-![Example Plot](plots/Combined_plots.png)
+![Example Plot](plots/plots.png)
 Combined Fresnel Diffraction plots*
 
 ### Reference
