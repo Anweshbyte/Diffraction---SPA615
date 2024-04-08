@@ -15,9 +15,10 @@ def generate_plots():
         data_list.append(data)
         labels.append(label)
 
-    u_values = np.sqrt(2 / (lmda * dist)) * np.linspace(-50, 10, 1000)
+    # u_values = np.sqrt(2 / (lmda * dist)) * np.linspace(-50, 10, 100000)
+    x_values = np.linspace(-50,10,100000)
     for data, label in zip(data_list, labels):
-        plt.plot(u_values, data, label=label)
+        plt.plot(x_values, data, label=label)
 
     plt.xlabel('u (Fresnel Number)')
     plt.ylabel('Intensity of light')
