@@ -20,7 +20,7 @@ def generate_plots():
     for data, label in zip(data_list, labels):
         plt.plot(x_values, data, label=label)
 
-    plt.xlabel('u (Fresnel Number)')
+    plt.xlabel('x (m)')
     plt.ylabel('Intensity of light')
     plt.title('Effect of finite passband')
     plt.legend()
