@@ -12,12 +12,11 @@ poly_intensity = np.zeros_like(x_values)
 
 if BW != 0:
     for i in np.arange(lmda_min, lmda_max, alpha):
-        # u_values = np.sqrt(2 / (i * dist)) * np.linspace(-50, 10, 100000)
-        S, C = fresnel(np.sqrt(2 / (lmda_min * dist)) * x_values)
+        S, C = fresnel(np.sqrt(2 / (i * dist)) * x_values)
         intensity = 0.5 * ((0.5 - C)**2 + (0.5 - S)**2)
-        poly_intensity  += 0.1 * intensity
-        folder_path = "int_arr"
+        poly_intensity  +=  0.1 * intensity
 
+    folder_path = "int_arr"
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
@@ -26,11 +25,10 @@ if BW != 0:
 
 
 else: 
-    u_values = np.sqrt(2 / (lmda * dist)) * np.linspace(-50, 10, 100000)
     S, C = fresnel(np.sqrt(2 / (lmda_min * dist)) * x_values)
     intensity = 0.5 * ((0.5 - C)**2 + (0.5 - S)**2)
-    folder_path = "int_arr"
 
+    folder_path = "int_arr"
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
